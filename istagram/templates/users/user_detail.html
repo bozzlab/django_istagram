@@ -29,8 +29,8 @@
         <!-- Profile Description -->
       </div>
       <!-- Profile -->
-    {% for post in posts %}
-     <div class="posts">
+  <div class="posts">
+  {% for post in posts %}
         <div class="post">
           <a href="#">
             <img src="{{post.image.url}}" />
@@ -46,8 +46,12 @@
             </div>
           </a>
         </div>
-      </div>           
-    {% endfor %}
+       
+
+{% endfor %}
+
+        </div>
+      </div>
 
 
 </main>
