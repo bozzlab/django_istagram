@@ -25,5 +25,6 @@ urlpatterns = [
     path('', home, name="home"),
     path('accounts/', include('django.contrib.auth.urls')),
     path('posts/',include('posts.urls')),
+    path('profile/',include('users.urls')),
     #static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)  + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
